@@ -56,7 +56,7 @@ void do_add(MusicLibraryApi &api) {
     AddResponseMessage& resp = (AddResponseMessage&)(*msgr);
 
     if (resp.status == MESSAGE_STATUS_OK) {
-      std::cout << std::endl << "   \"" << song << "\" added successfull." << std::endl;
+      std::cout << std::endl << "   \"" << song << "\" added successfully." << std::endl;
     } else {
       std::cout << std::endl << "   Adding \"" << song << "\" failed: " << resp.info << std::endl;
     }
